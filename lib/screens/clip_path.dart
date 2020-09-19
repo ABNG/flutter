@@ -55,7 +55,7 @@ class MyCustomClipper extends CustomClipper<Path> {
     var controllerPoint4 = Offset(0, size.height * 0.33);
     var endpoint4 = Offset(0, (size.height * 0.33) + 50);
     path.quadraticBezierTo(
-        controllerPoint4.dx, controllerPoint4.dy, endpoint4.dx, endpoint4.dy);
+        controllerPoint4.dx, controllerPoint4.dy, endpoint4.dx, endpoint4.dy);  //for cubic https://medium.com/flutter-community/flutter-custom-clipper-28c6d380fdd6 only see cubic
     //path.close() to close path last line
     return path;
   }
